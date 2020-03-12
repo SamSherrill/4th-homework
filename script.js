@@ -3,16 +3,16 @@
 // May need to change these from prompts.
 var questions = [
     {
-          question: "Commonly used data types do NOT include: \n(a) Booleans\n\(b) Strings\n(c) Alerts\n(d) Numbers",
+          question: "Commonly used data types do NOT include: \n(a) Booleans \n(b) Strings \n(c) Alerts \n(d) Numbers",
           answer: "c"
     },
     {
-         question: "What color are Bananas?\n(a) Teal\n\(b) Magenta\n(c) Yellow",
+         question: "The condition in an if / else statement is enclosed in: \n(a) Quotes \n(b) Curly brackets \n(c) Parentheses \n(d) Square brackets",
          answer: "c"
     },
     {
-         question: "What color are strawberries?\n(a) Yellow\n\(b) Red\n(c) Blue",
-         answer: "b"
+         question: "Arrays in JavaScript can be used to store: \n(a) Numbers \n(b) Strings \n(c) Booleans \n(d) All of the above",
+         answer: "d"
     }
 ];
 var score = 0;
