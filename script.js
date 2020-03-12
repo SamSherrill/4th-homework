@@ -1,3 +1,40 @@
+// BELOW: Example quiz code from https://www.mikedane.com/web-development/javascript/building-a-quiz/
+// I really like the questions setup as objects like this.
+// May need to change these from prompts.
+var questions = [
+    {
+          question: "Commonly used data types do NOT include: \n(a) Booleans\n\(b) Strings\n(c) Alerts\n(d) Numbers",
+          answer: "c"
+    },
+    {
+         question: "What color are Bananas?\n(a) Teal\n\(b) Magenta\n(c) Yellow",
+         answer: "c"
+    },
+    {
+         question: "What color are strawberries?\n(a) Yellow\n\(b) Red\n(c) Blue",
+         answer: "b"
+    }
+];
+var score = 0;
+
+for(var i = 0; i < questions.length; i++){
+    var response = window.prompt(questions[i].question);
+    if(response == questions[i].answer){
+         score++;
+         alert("Correct!");
+    } else {
+         alert("WRONG!");
+    }
+}
+alert("you got " + score + "/" + questions.length);
+
+
+
+
+
+
+
+
 // QUESTIONS:
 // Is responsiveness required? YES
 // 
@@ -13,6 +50,7 @@
 // Incorrect answer lessens remaining time
 // Save high score with initials
 // Scores will be saved & compared. Almost for sure need to rank them.
+// --> Save scores as an array of objects, with initials & scores associated to each other.
 
 // IDEAS:
 // Have a form to start that logs their name. Maybe store this to localStorage.
